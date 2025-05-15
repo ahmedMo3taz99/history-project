@@ -1,11 +1,18 @@
-import { gsap } from "../node_modules/gsap/index.js";
-import { CustomEase } from "../node_modules/gsap/CustomEase.js";
-// import { snap } from "gsap";
+// import { gsap } from "../node_modules/gsap/index.js";
+// import { CustomEase } from "../node_modules/gsap/CustomEase.js";
+// // import { snap } from "gsap";
+
+// gsap.registerPlugin(CustomEase);
 
 gsap.registerPlugin(CustomEase);
 
 const customEase = CustomEase.create("custom", ".87,0,.13,1");
 const counter = document.getElementById("counter");
+
+// باقي الأنيميشن هنا...
+
+// const customEase = CustomEase.create("custom", ".87,0,.13,1");
+// const counter = document.getElementById("counter");
 
 gsap.set(".video-container", {
   scale: 0,
