@@ -1,0 +1,53 @@
+.main-cards {
+  margin: 0 auto;
+  overflow: hidden;
+
+  &-all {
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 3rem;
+
+
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &-part {
+      border: 1px solid $yellow-color-1;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      width: 33.33%;
+      overflow: hidden;
+
+      @include respond(tab-port) {
+        width: 49%;
+
+        &:nth-last-child(1) {
+          width: 70%;
+        }
+      }
+
+      @include respond(phone){
+        width: 100% !important;
+      }
+
+      &-img {
+        overflow: hidden;
+        width: 100%;
+
+        &-src {
+          width: 100%;
+          transition: all 0.4s;
+        }
+      }
+      &:hover &-img-src {
+        transform: scale(1.1);
+      }
+
+      &-contant {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

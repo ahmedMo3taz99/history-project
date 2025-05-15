@@ -1,0 +1,156 @@
+.footer {
+  margin: 0 auto;
+  &-logo {
+    padding: 8rem 0 12rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $white-color-1;
+
+    @include respond(tab-port) {
+      padding: 5rem 0 8rem 0;
+    }
+
+    // &-line {
+    //   //   width: 130%;
+    //     height: 10px;
+    //   //   background-color: $white-color-1;
+    // }
+
+    &-img {
+      &-src {
+        width: 10vw;
+
+        @include respond(tab-port) {
+          width: 12rem;
+        }
+
+        @include respond(phone) {
+          width: 10rem;
+        }
+      }
+    }
+  }
+  &-content {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+
+    @include respond(tab-land) {
+      gap: 10rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+    &-links {
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      @include respond(tab-port) {
+        gap: 8rem;
+      }
+
+      @include respond(phone) {
+        gap: 2rem;
+      }
+
+      &-link:link,
+      &-link:visited {
+        text-decoration: none;
+        color: $white-color-1;
+        font-size: 3rem;
+        text-transform: capitalize;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s;
+
+        @include respond(phone) {
+          font-size: 2.5rem;
+        }
+      }
+
+      &-link:hover,
+      &-link:active {
+        font-size: 2.5rem;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem 2rem;
+
+      @include respond(tab-port) {
+        flex-direction: row;
+        gap: 3rem;
+      }
+
+      &-loc {
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        gap: 2rem;
+
+        @include respond(tab-port) {
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+        }
+        @include respond(phone) {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        &-src {
+          width: 3vw;
+
+          @include respond(tab-port) {
+            width: 5vw;
+          }
+          @include respond(phone) {
+            width: 8vw;
+          }
+        }
+        &-text {
+          font-size: 2rem;
+          color: $white-color-1;
+
+          @include respond(tab-land) {
+            font-size: 1.8rem;
+          }
+          @include respond(phone) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+// footer-logo
+// footer-logo-line
+// footer-logo-img
+// footer-logo-img-src
+// "footer-content
+// footer-content-links
+// footer-content-links-link
+// footer-content-info
+// footer-content-info-loc
+// footer-content-info-loc-src
+// footer-content-info-loc-text
+// footer-content-info-cal
+// footer-content-info-cal-src
+// footer-content-info-cal-text

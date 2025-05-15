@@ -1,0 +1,16 @@
+@import "abstracts/mixins";
+@import "abstracts/variabls";
+
+@import "base/base";
+@import "base/buttons";
+@import "base/typography";
+
+@import "components/footer";
+@import "components/loading";
+
+@import "pages/home-page/home";
+@import "pages/home-page/cards";
+@import "pages/home-page/all-logos";
+@import "pages/home-page/details-pages";
+@import "pages/home-page/main-swiper";
+@import "pages/home-page/professional";

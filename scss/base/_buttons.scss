@@ -1,0 +1,144 @@
+.check-btn {
+  color: $yellow-color-1;
+  width: 50%;
+  text-align: center;
+  margin-top: 6rem;
+  font-weight: 400;
+  font-size: 2rem;
+
+  @include respond(tab-port) {
+    margin: 3rem 0;
+    width: 50%;
+  }
+
+  @include respond(phone) {
+    margin: 3rem 0;
+    width: 100%;
+  }
+
+  &:link,
+  :visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 2px solid $yellow-color-1;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.4s;
+  }
+
+  &:hover,
+  :active {
+    background-color: $yellow-color-1;
+    border: 2px solid $yellow-color-1;
+    color: $gray-color;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 0.5px;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.btn-swiper {
+  background-color: $yellow-color-1;
+  color: $gray-color !important;
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid $yellow-color-1;
+  transition: all 0.4s;
+
+  @include respond(tab-port) {
+    padding: 3rem 5rem;
+  }
+  @include respond(phone) {
+    display: none !important;
+  }
+}
+.btn-swiper:hover {
+  background-color: transparent;
+  color: $yellow-color-1 !important;
+  border: 1px solid $yellow-color-1;
+}
+.btn-swiper-next {
+  right: -20px !important;
+  @include respond(phone) {
+    right: -8px !important;
+  }
+}
+.btn-swiper-prev {
+  left: -25px !important;
+  @include respond(phone) {
+    left: -10px !important;
+  }
+}
+
+.swiper-button-prev::after {
+  font-size: 3.5rem !important;
+  @include respond(phone) {
+    font-size: 2rem !important;
+  }
+}
+.swiper-button-next::after {
+  font-size: 3.5rem !important;
+  @include respond(phone) {
+    font-size: 2rem !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: $white-color-1 !important;
+  width: 12px !important;
+  height: 12px !important;
+
+  @include respond(phone) {
+    width: 6px !important;
+    height: 6px !important;
+  }
+}
+
+.check-btn-profesSional {
+  color: $gray-color;
+  background-color: $yellow-color-1;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  padding: 1rem 2rem;
+
+
+
+  @include respond (phone){
+    margin-top:0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0.8rem 1.6rem;
+
+  }
+
+  &:link,
+  :visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid $gray-color;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.4s;
+  }
+
+  &:hover,
+  :active {
+    background-color: transparent;
+    border: 2px solid $yellow-color-1;
+    color: $yellow-color-1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 0.5px;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

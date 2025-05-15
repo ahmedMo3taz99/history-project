@@ -1,0 +1,111 @@
+<section class="section-main-swiper">
+<div class="main-swiper swiper">
+  <div class="swiper-wrapper">
+    <!-- ------------------------------------------------------------------------------ -->
+
+    <div class="main-swiper-fr swiper-slide">
+      <div class="main-swiper-fr-img">
+        <img
+          src="./images/home-page/section-of-swiper/07 (1).jpg"
+          alt="amiazing photo"
+          class="main-swiper-fr-img-src"
+        />
+      </div>
+      <div class="main-swiper-fr-data">
+        <h4 class="forth-header">small pref about this photo</h4>
+      </div>
+    </div>
+
+    <div class="main-swiper-fr swiper-slide">
+      <div class="main-swiper-fr-img">
+        <img
+          src="./images/home-page/section-of-swiper/07 (2).jpg"
+          alt="amiazing photo"
+          class="main-swiper-fr-img-src"
+        />
+      </div>
+      <div class="main-swiper-fr-data">
+        <h4 class="forth-header">small pref about this photo</h4>
+      </div>
+    </div>
+
+    <div class="main-swiper-fr swiper-slide">
+      <div class="main-swiper-fr-img">
+        <img
+          src="./images/home-page/section-of-swiper/07 (3).jpg"
+          alt="amiazing photo"
+          class="main-swiper-fr-img-src"
+        />
+      </div>
+      <div class="main-swiper-fr-data">
+        <h4 class="forth-header">small pref about this photo</h4>
+      </div>
+    </div>
+
+    <div class="main-swiper-fr swiper-slide">
+      <div class="main-swiper-fr-img">
+        <img
+          src="./images/home-page/section-of-swiper/07 (4).jpg"
+          alt="amiazing photo"
+          class="main-swiper-fr-img-src"
+        />
+      </div>
+      <div class="main-swiper-fr-data">
+        <h4 class="forth-header">small pref about this photo</h4>
+      </div>
+    </div>
+
+    <div class="main-swiper-fr swiper-slide">
+      <div class="main-swiper-fr-img">
+        <img
+          src="./images/home-page/section-of-swiper/07.jpg"
+          alt="amiazing photo"
+          class="main-swiper-fr-img-src"
+        />
+      </div>
+      <div class="main-swiper-fr-data">
+        <h4 class="forth-header">small pref about this photo</h4>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------- -->
+  </div>
+  <div class="swiper-button-next btn-swiper btn-swiper-next"></div>
+  <div class="swiper-button-prev btn-swiper btn-swiper-prev"></div>
+  <div class="swiper-pagination main-pagination"></div>
+</div>
+</section>
+
+
+
+.main-swiper {
+    position: relative;
+    height: 90vh;
+  
+    @include respond(tab-port) {
+      height: auto;
+    }
+  
+    @include respond(phone) {
+      height: auto;
+    }
+  
+    &-fr {
+      position: absolute;
+  
+      &-img {
+        &-src {
+          opacity: 0.5;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-data {
+        position: absolute;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  

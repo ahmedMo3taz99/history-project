@@ -1,0 +1,155 @@
+.profesSional-main {
+  border: 2px solid $yellow-color-1;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  height: 100vh;
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    flex-wrap: wrap;
+  }
+
+  @include respond(phone){
+    height: 80vh;
+  }
+
+  &-images {
+    overflow: hidden;
+    width: 50vw;
+    height: 100%;
+
+    @include respond(tab-land) {
+      width: 100vw;
+      order: 2;
+      height: 50%;
+    }
+
+    @include respond(tab-port) {
+      height: 60%;
+    }
+
+    @include respond(phone) {
+      height: 70%;
+    }
+
+    &-part-1 {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      height: 50%;
+      overflow: hidden;
+
+      @include respond(tab-land) {
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+      }
+
+      @include respond(phone) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      & .more {
+        display: none;
+        @include respond(tab-land) {
+          display: block;
+        }
+        @include respond(phone) {
+          display: none;
+        }
+      }
+      &-src {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-part-2 {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 0.5rem;
+      height: 50%;
+      overflow: hidden;
+
+      @include respond(tab-land) {
+        grid-template-columns: 1fr 1fr 2fr 1fr;
+      }
+
+      @include respond(phone) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      & .more {
+        display: none;
+        @include respond(tab-land) {
+          display: block;
+        }
+        @include respond(phone) {
+          display: none;
+        }
+      }
+
+      &-src {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-contact {
+    width: 50vw;
+    position: relative;
+    height: 100%;
+
+    @include respond(tab-land) {
+      width: 100vw;
+      order: 1;
+      // height: 50%;
+    }
+
+    @include respond(tab-port) {
+      // height: 40%;
+    }
+
+    @include respond(phone) {
+      // height: 30%;
+    }
+
+    &-header {
+      position: absolute;
+      left: -250px;
+      display: block;
+
+      @include respond(tab-land) {
+        // display: none;
+        left: 0;
+      }
+
+      &-phone {
+        display: none;
+        @include respond(tab-land) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      &-src {
+        width: 100%;
+        display: block;
+        @include respond(tab-land) {
+          display: none;
+        }
+      }
+    }
+    &-text {
+      position: absolute;
+      bottom: 0%;
+
+      display: flex;
+      gap: 5rem;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}

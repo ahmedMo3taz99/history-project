@@ -1,0 +1,46 @@
+.section-all-Logos {
+  background-color: $main-color-2;
+  padding: 5rem 0 2.5rem 0;
+  overflow: hidden;
+}
+
+.section-details-pages {
+  background-color: $main-color-2;
+  padding: 15rem 0 2.5rem 0;
+  overflow: hidden;
+
+  @include respond(tab-port) {
+    padding: 6rem 0 2.5rem 0;
+    border-top: 1px solid $white-color-1;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 0 2.5rem 0;
+    border-top: 1px solid $white-color-1;
+  }
+}
+
+.section-main-swiper {
+  background-color: black;
+}
+
+.section-cards {
+  padding-top: 8rem;
+  background-color: $main-color-2;
+
+  @include respond (phone){
+    padding-top: 4rem;
+  }
+}
+
+.section-profesSional{
+  padding: 0 1rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  background-color: $main-color-2;
+}
+
+.section-footer{
+  background-color: $gray-color;
+  padding-bottom: 5rem;
+}
