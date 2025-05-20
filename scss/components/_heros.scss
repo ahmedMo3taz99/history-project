@@ -1,0 +1,126 @@
+// heros
+// heros-header
+// heros-header-title
+// heros-header-text
+// heros-footer
+// heros-footer-logo
+// heros-footer-logo-text
+// heros-footer-navigation
+.heros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/about-page/hero/01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  font-family: "amonosdisplay", sans-serif;
+
+  &-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-gray-50;
+
+    &-title {
+      font-size: 10rem;
+    }
+    &-text {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 6rem;
+
+    &-logo {
+      &-text {
+        & a {
+          color: $color-gray-50;
+          text-decoration: none;
+          transition: all 0.4s;
+
+          &:hover {
+            letter-spacing: 5px;
+          }
+        }
+      }
+    }
+
+    &-navigation {
+      & ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      & li {
+        list-style: none;
+        z-index: 2;
+
+        & a:link,
+        a:visited {
+          font-size: 1.5rem;
+          background: transparent;
+          border: none;
+          padding: 0.5rem 1rem;
+          color: $white-color-1;
+          text-transform: uppercase;
+          position: relative;
+          transition: 0.5s ease;
+          cursor: pointer;
+          text-decoration: none;
+
+        }
+
+        & a::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 0;
+          width: 100%;
+          background-color: $yellow-color-1;
+          transition: 0.4s ease;
+          z-index:-1;
+        }
+        & a::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          width: 0;
+          background-color: $yellow-color-1;
+          transition: 0.5s ease;
+        }
+        & a:hover::before {
+          width: 100%;
+        }
+        & a:hover::after {
+          height: 100%;
+          transition-delay: 0.4s;
+          background-color: $yellow-color-1;
+        //   z-index: 0;
+        }
+        & a:hover,
+        a:active {
+          color: $gray-color;
+          transition-delay: 0.5s;
+        }
+      }
+    }
+  }
+}

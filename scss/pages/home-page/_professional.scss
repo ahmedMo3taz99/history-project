@@ -1,155 +1,312 @@
+// profesSional-main
+// profesSional-main-images
+// profesSional-main-images-part-1
+// profesSional-main-images-part-1-src
+
+// profesSional-main-images-part-2
+// profesSional-main-images-part-2-src
+
+// profesSional-main-contact
+// profesSional-main-contact-header
+// profesSional-main-contact-header-src
+// profesSional-main-contact-header-phone
+// profesSional-main-contact-text
+// secandary-paragraph-profesSional
+// check-btn-profesSional
+
+// .profesSional-main {
+//   border: 2px solid $yellow-color-1;
+//   margin: 2rem 0;
+//   padding: 1rem 2rem ;
+//   display: flex;
+//   gap: 2rem;
+//   height: 100vh;
+//   overflow: hidden;
+
+//   @include respond(tab-land) {
+//     flex-wrap: wrap;
+//   }
+
+//   @include respond(phone){
+//     height: 50vh;
+//   }
+
+//   &-images {
+//     overflow: hidden;
+//     width: 50vw;
+//     height: 100%;
+
+//     @include respond(tab-land) {
+//       width: 100vw;
+//       order: 2;
+//       height: 50%;
+//     }
+
+//     @include respond(tab-port) {
+//       height: 60%;
+//     }
+
+//     @include respond(phone) {
+//       height: 70%;
+//     }
+
+//     &-part-1 {
+//       display: grid;
+//       grid-template-columns: 1.5fr 1fr;
+//       gap: 0.5rem;
+//       margin-bottom: 0.5rem;
+//       height: 50%;
+//       overflow: hidden;
+
+//       @include respond(tab-land) {
+//         grid-template-columns: 1fr 1fr 2fr 1fr;
+//       }
+
+//       @include respond(phone) {
+//         grid-template-columns: 1fr 1fr;
+//       }
+
+//       & .more {
+//         display: none;
+//         @include respond(tab-land) {
+//           display: block;
+//         }
+//         @include respond(phone) {
+//           display: none;
+//         }
+//       }
+//       &-src {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//       }
+//     }
+//     &-part-2 {
+//       display: grid;
+//       grid-template-columns: 1fr 1.5fr;
+//       gap: 0.5rem;
+//       height: 50%;
+//       overflow: hidden;
+
+//       @include respond(tab-land) {
+//         grid-template-columns: 1fr 1fr 2fr 1fr;
+//       }
+
+//       @include respond(phone) {
+//         grid-template-columns: 1fr 1fr;
+//       }
+
+//       & .more {
+//         display: none;
+//         @include respond(tab-land) {
+//           display: block;
+//         }
+//         @include respond(phone) {
+//           display: none;
+//         }
+//       }
+
+//       &-src {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//       }
+//     }
+//   }
+
+//   &-contact {
+//     width: 50vw;
+//     position: relative;
+//     height: 100%;
+
+//     @include respond(tab-land) {
+//       width: 100vw;
+//       order: 1;
+//       // height: 50%;
+//     }
+
+//     @include respond(tab-port) {
+//       // height: 40%;
+//     }
+
+//     @include respond(phone) {
+//       // height: 30%;
+//     }
+
+//     &-header {
+//       position: absolute;
+//       left: -250px;
+//       display: block;
+
+//       @include respond(tab-land) {
+//         // display: none;
+//         left: 0;
+//       }
+
+//       &-phone {
+//         display: none;
+//         @include respond(tab-land) {
+//           display: block;
+//           width: 100%;
+//         }
+//       }
+
+//       &-src {
+//         width: 100%;
+//         display: block;
+//         @include respond(tab-land) {
+//           display: none;
+//         }
+//       }
+//     }
+//     &-text {
+//       position: absolute;
+//       bottom: 0%;
+
+//       display: flex;
+//       gap: 5rem;
+//       flex-direction: column;
+//       justify-content: space-around;
+//     }
+//   }
+// }
+
 .profesSional-main {
   border: 2px solid $yellow-color-1;
-  padding: 1rem;
+  overflow: hidden;
   display: flex;
   gap: 2rem;
+  padding: 2rem;
   height: 100vh;
-  overflow: hidden;
 
   @include respond(tab-land) {
     flex-wrap: wrap;
   }
 
-  @include respond(phone){
-    height: 50vh;
-  }
-
   &-images {
-    overflow: hidden;
-    width: 50vw;
-    height: 100%;
-
+    width: 50%;
     @include respond(tab-land) {
-      width: 100vw;
       order: 2;
-      height: 50%;
-    }
-
-    @include respond(tab-port) {
-      height: 60%;
-    }
-
-    @include respond(phone) {
-      height: 70%;
+      width: auto;
     }
 
     &-part-1 {
       display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 0.5rem;
       height: 50%;
-      overflow: hidden;
+      margin-bottom: 0.5rem;
 
       @include respond(tab-land) {
-        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
-
       @include respond(phone) {
         grid-template-columns: 1fr 1fr;
       }
 
-      & .more {
-        display: none;
-        @include respond(tab-land) {
-          display: block;
-        }
-        @include respond(phone) {
-          display: none;
-        }
-      }
       &-src {
+        object-fit: cover;
+
         width: 100%;
         height: 100%;
-        object-fit: cover;
+
+        &.more {
+          display: none;
+          @include respond(tab-land) {
+            display: block;
+          }
+
+          @include respond(phone) {
+            display: none;
+          }
+        }
       }
     }
+
     &-part-2 {
       display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 0.5rem;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 0.5rem;
       height: 50%;
-      overflow: hidden;
 
       @include respond(tab-land) {
-        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
       }
-
       @include respond(phone) {
         grid-template-columns: 1fr 1fr;
       }
 
-      & .more {
-        display: none;
-        @include respond(tab-land) {
-          display: block;
-        }
-        @include respond(phone) {
-          display: none;
-        }
-      }
-
       &-src {
+        object-fit: cover;
+
         width: 100%;
         height: 100%;
-        object-fit: cover;
+
+        &.more {
+          display: none;
+          @include respond(tab-land) {
+            display: block;
+          }
+
+          @include respond(phone) {
+            display: none;
+          }
+        }
       }
     }
   }
 
+  // -------------------------------------
   &-contact {
-    width: 50vw;
-    position: relative;
-    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @include respond(tab-land) {
-      width: 100vw;
       order: 1;
-      // height: 50%;
-    }
-
-    @include respond(tab-port) {
-      // height: 40%;
-    }
-
-    @include respond(phone) {
-      // height: 30%;
+      width: auto;
+      gap: 2rem;
+      justify-content: space-around;
     }
 
     &-header {
-      position: absolute;
-      left: -250px;
-      display: block;
+      margin-left: -22rem;
 
       @include respond(tab-land) {
-        // display: none;
-        left: 0;
-      }
-
-      &-phone {
-        display: none;
-        @include respond(tab-land) {
-          display: block;
-          width: 100%;
-        }
+        margin: 0;
       }
 
       &-src {
         width: 100%;
-        display: block;
         @include respond(tab-land) {
+          display: none;
+        }
+        @include respond(phone) {
+          display: block;
+        }
+      }
+
+      &-phone {
+        width: 100%;
+        display: none;
+        @include respond(tab-land) {
+          display: block;
+        }
+        @include respond(phone) {
           display: none;
         }
       }
     }
-    &-text {
-      position: absolute;
-      bottom: 0%;
 
+    &-text {
       display: flex;
-      gap: 5rem;
       flex-direction: column;
-      justify-content: space-around;
+      gap: 2rem;
+      margin-bottom: 5rem;
+      @include respond(tab-land) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }

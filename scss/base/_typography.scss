@@ -2,7 +2,7 @@
   font-size: 5rem;
   text-align: center;
   text-transform: uppercase;
-  color: $yellow-color-1;
+  color: $color-amber-400;
   margin-bottom: 8rem;
   font-weight: bolder;
 
@@ -108,9 +108,8 @@
     letter-spacing: 1px;
   }
 
-  @include respond (phone){
+  @include respond(phone) {
     font-size: 1.4rem;
-    letter-spacing:1px;
+    letter-spacing: 1px;
   }
-
 }

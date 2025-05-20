@@ -1,4 +1,7 @@
-
+@font-face {
+  font-family: "amonosdisplay";
+  src: url(/fonts/amonosdisplay-regular.otf);
+}
 
 *,
 *::after,
@@ -33,5 +36,4 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Sanomat Sans Trial", sans-serif;
-
 }
