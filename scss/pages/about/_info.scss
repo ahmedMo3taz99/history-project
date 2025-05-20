@@ -1,0 +1,165 @@
+.info {
+  display: flex;
+  gap: 2rem;
+  height: 100vh;
+  overflow: hidden;
+
+  @include respond(tab-land) {
+    height: 80vh;
+  }
+  @include respond(tab-port) {
+    height: 60vh;
+  }
+
+  @include respond(phone) {
+    flex-wrap: wrap;
+    height: 80vh;
+  }
+
+  &-img {
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+
+    @include respond(phone) {
+      order: 1;
+      width: 100%;
+      border-radius: 20px;
+      height: 50%;
+    }
+
+    &-src {
+      width: 100%;
+      opacity: 0.8;
+
+      @include respond(tab-port) {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include respond(phone) {
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+    @include respond(phone) {
+      order: 2;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    &-header {
+      margin-bottom: 2rem;
+      border-bottom: 2px solid $color-amber-500;
+
+      @include respond(tab-port) {
+        margin-bottom: 1.5rem;
+      }
+      @include respond(phone) {
+        margin-bottom: 0;
+        border-bottom: 1px solid $color-amber-500;
+      }
+
+      & h2 {
+        color: $color-amber-500;
+        font-size: 5rem;
+        text-align: center;
+        letter-spacing: 2px;
+        padding-bottom: 2rem;
+
+        @include respond(tab-port) {
+          font-size: 4rem;
+        }
+        @include respond(phone) {
+          padding-bottom: 1rem;
+          font-size: 3rem;
+        }
+      }
+    }
+
+    &-work {
+      & h3 {
+        color: $color-amber-500;
+        font-size: 3rem;
+        border-bottom: 1px solid $color-gray-50;
+        width: 40%;
+        padding-bottom: 1rem;
+
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+        }
+        @include respond(phone) {
+          font-size: 2rem;
+          letter-spacing: 1.5px;
+          border-bottom: 0.5px solid $color-gray-50;
+        }
+      }
+      & p {
+        color: $color-gray-50;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
+        @include respond(phone) {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    &-expert {
+      & h3 {
+        color: $color-amber-500;
+        font-size: 3rem;
+        border-bottom: 1px solid $color-gray-50;
+        width: 50%;
+        padding-bottom: 1rem;
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+        }
+        @include respond(phone) {
+          font-size: 2rem;
+          letter-spacing: 1.5px;
+          border-bottom: 0.5px solid $color-gray-50;
+        }
+      }
+      & p {
+        color: $color-gray-50;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
+        @include respond(phone) {
+          font-size: 1.5rem;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    &-about {
+      & p {
+        color: $color-gray-50;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 5rem;
+
+        @include respond(tab-port) {
+          font-size: 1.8rem;
+        }
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+  }
+}

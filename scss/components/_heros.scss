@@ -9,7 +9,7 @@
 .heros {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../../images/about-page/hero/01.jpg);
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -19,6 +19,7 @@
   justify-content: end;
   position: relative;
   font-family: "amonosdisplay", sans-serif;
+  overflow: hidden;
 
   &-header {
     position: absolute;
@@ -27,13 +28,28 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: $color-gray-50;
+    width: 90%;
 
     &-title {
-      font-size: 10rem;
+      font-size: 12rem;
+      @include respond(tab-port) {
+        font-size: 10rem;
+      }
+
+      @include respond(phone) {
+        font-size: 6rem;
+      }
     }
     &-text {
-      font-size: 2rem;
+      font-size: 2.5rem;
       letter-spacing: 2px;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -45,6 +61,9 @@
     padding: 2rem 6rem;
 
     &-logo {
+      @include respond(phone) {
+        display: none;
+      }
       &-text {
         & a {
           color: $color-gray-50;
@@ -59,6 +78,18 @@
     }
 
     &-navigation {
+      &-big {
+        @include respond(phone) {
+          display: none;
+        }
+      }
+
+      &.navbar {
+        @include respond(phone) {
+          display: block;
+        }
+      }
+
       & ul {
         display: flex;
         align-items: center;
@@ -70,9 +101,13 @@
         list-style: none;
         z-index: 2;
 
+        @include respond(phone) {
+          width: 100%;
+        }
+
         & a:link,
         a:visited {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           background: transparent;
           border: none;
           padding: 0.5rem 1rem;
@@ -83,6 +118,9 @@
           cursor: pointer;
           text-decoration: none;
 
+          @include respond(phone) {
+            font-size: 2.5rem;
+          }
         }
 
         & a::after {
@@ -94,7 +132,7 @@
           width: 100%;
           background-color: $yellow-color-1;
           transition: 0.4s ease;
-          z-index:-1;
+          z-index: -1;
         }
         & a::before {
           content: "";
@@ -113,12 +151,16 @@
           height: 100%;
           transition-delay: 0.4s;
           background-color: $yellow-color-1;
-        //   z-index: 0;
+          //   z-index: 0;
         }
         & a:hover,
         a:active {
           color: $gray-color;
           transition-delay: 0.5s;
+
+          @include respond(phone) {
+            color: $gray-color !important;
+          }
         }
       }
     }
