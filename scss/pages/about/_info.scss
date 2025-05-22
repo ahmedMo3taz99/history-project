@@ -30,7 +30,7 @@
 
     &-src {
       width: 100%;
-      opacity: 0.8;
+      opacity: 1;
 
       @include respond(tab-port) {
         height: 100%;
