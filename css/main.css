@@ -1065,6 +1065,11 @@ body {
   background-color: oklch(21% 0.034 264.665deg);
 }
 
+.section-loaction {
+  background-color: oklch(13% 0.028 261.692deg);
+  margin-bottom: -1rem;
+}
+
 .info {
   display: flex;
   gap: 2rem;
@@ -1250,6 +1255,42 @@ body {
   }
 }
 
+.loaction {
+  overflow: hidden;
+}
+.loaction nav {
+  padding: 2rem;
+}
+.loaction nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  list-style: none;
+}
+.loaction nav ul li {
+  background-color: oklch(27.8% 0.033 256.848deg);
+  padding: 1rem 6rem;
+  transition: all 0.4s;
+}
+@media only screen and (max-width: 37.5rem) {
+  .loaction nav ul li {
+    padding: 0.8rem 4rem;
+  }
+}
+.loaction nav ul li a {
+  text-decoration: none;
+  color: oklch(98.5% 0.002 247.839deg);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+.loaction nav ul li .disabledd {
+  color: oklch(44.6% 0.03 256.802deg);
+  cursor: no-drop;
+}
+
 .section-all-Logos {
   background-color: oklch(27.8% 0.033 256.848deg);
   padding: 5rem 0 2.5rem 0;
@@ -1350,6 +1391,9 @@ body {
 
 .all-logos {
   margin: 0 auto;
+}
+.all-logos-header h2 {
+  font-family: "amonosdisplay", sans-serif;
 }
 .all-logos-img {
   height: 5vw;
@@ -1649,4 +1693,239 @@ body {
   .profesSional-main-contact-text {
     margin-bottom: 2rem;
   }
+}
+
+.heross {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../images/servies/hero/01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  font-family: "amonosdisplay", sans-serif;
+  overflow: hidden;
+}
+.heross-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: oklch(98.5% 0.002 247.839deg);
+  width: 90%;
+}
+.heross-header-title {
+  font-size: 12rem;
+}
+@media only screen and (max-width: 56.25rem) {
+  .heross-header-title {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-header-title {
+    font-size: 6rem;
+  }
+}
+.heross-header-text {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 56.25rem) {
+  .heross-header-text {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-header-text {
+    font-size: 1.5rem;
+  }
+}
+.heross-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 6rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-logo {
+    display: none;
+  }
+}
+.heross-footer-logo-text a {
+  color: oklch(98.5% 0.002 247.839deg);
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.heross-footer-logo-text a:hover {
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-navigation-big {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-navigation.navbar {
+    display: block;
+  }
+}
+.heross-footer-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.heross-footer-navigation li {
+  list-style: none;
+  z-index: 2;
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-navigation li {
+    width: 100%;
+  }
+}
+.heross-footer-navigation li a:link,
+.heross-footer-navigation li a:visited {
+  font-size: 1.8rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #e2e2e2;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-navigation li a:link,
+  .heross-footer-navigation li a:visited {
+    font-size: 2.5rem;
+  }
+}
+.heross-footer-navigation li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #fcb116;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+.heross-footer-navigation li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fcb116;
+  transition: 0.5s ease;
+}
+.heross-footer-navigation li a:hover::before {
+  width: 100%;
+}
+.heross-footer-navigation li a:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  background-color: #fcb116;
+}
+.heross-footer-navigation li a:hover,
+.heross-footer-navigation li a:active {
+  color: #222;
+  transition-delay: 0.5s;
+}
+@media only screen and (max-width: 37.5rem) {
+  .heross-footer-navigation li a:hover,
+  .heross-footer-navigation li a:active {
+    color: #222 !important;
+  }
+}
+
+.section-document {
+  background-color: oklch(27.8% 0.033 256.848deg);
+}
+
+.document {
+  padding: 4rem 8rem;
+  overflow: hidden;
+}
+@media only screen and (max-width: 75rem) {
+  .document {
+    padding: 2rem 4rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .document {
+    padding: 1rem 2rem;
+  }
+}
+.document-header {
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .document-header {
+    margin-bottom: 4rem;
+  }
+}
+.document-header h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: oklch(98.5% 0.002 247.839deg);
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 37.5rem) {
+  .document-header h2 {
+    font-size: 4rem;
+  }
+}
+.document-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media only screen and (max-width: 56.25rem) {
+  .document-images {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .document-images {
+    gap: 1rem;
+  }
+}
+.document-images-part-one, .document-images-part-two {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+@media only screen and (max-width: 56.25rem) {
+  .document-images-part-one, .document-images-part-two {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .document-images-part-one, .document-images-part-two {
+    row-gap: 1rem;
+  }
+}
+.document-images-part-one-src, .document-images-part-two-src {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+.document-images-part-one-src:hover, .document-images-part-two-src:hover {
+  opacity: 1;
 }
