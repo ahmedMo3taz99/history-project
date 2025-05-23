@@ -23,13 +23,13 @@
         width: 50vw;
         opacity: 0.6;
 
-        @include respond(tab-port) {
-          width: 12rem;
-        }
+        // @include respond(tab-port) {
+        //   width: 12rem;
+        // }
 
-        @include respond(phone) {
-          width: 10rem;
-        }
+        // @include respond(phone) {
+        //   width: 10rem;
+        // }
       }
     }
   }
