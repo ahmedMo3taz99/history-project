@@ -1,0 +1,100 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5rem;
+
+  @include respond(phone) {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-header {
+    h3 {
+      font-family: "amonosdisplay", sans-serif;
+      font-size: 8rem;
+      color: $color-amber-500;
+
+      @include respond(phone) {
+        font-size: 4.5rem;
+      }
+    }
+    .floating-text {
+      animation: floatUpDown 2s ease-in-out infinite;
+      display: inline-block;
+      position: relative;
+    }
+
+    @keyframes floatUpDown {
+      0% {
+        top: 0;
+      }
+      50% {
+        top: -20px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+  }
+
+  & .all-soial-media {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+
+    @include respond(big-desktop) {
+      flex-wrap: wrap;
+    }
+
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include respond(phone) {
+      gap: 2rem;
+      align-items: center;
+      justify-content: start;
+    }
+
+    & .all-social-media-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      @include respond(phone) {
+        justify-content: center;
+        align-items: center;
+      }
+
+      & .all-social-media-data-src {
+        width: 6rem;
+
+        @include respond(phone) {
+          width: 4rem;
+        }
+      }
+
+      h5 {
+        a {
+          color: $color-gray-50;
+          font-size: 4rem;
+          letter-spacing: 1px;
+          text-decoration: none;
+
+          @include respond(phone) {
+            font-size: 2rem;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}

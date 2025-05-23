@@ -482,6 +482,38 @@ body {
   }
 }
 
+.fixed-Nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: oklch(21% 0.034 264.665deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 5rem;
+  border-bottom: 2px solid oklch(98.5% 0.002 247.839deg);
+}
+.fixed-Nav-link img {
+  width: 5rem;
+}
+.fixed-Nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: oklch(98.5% 0.002 247.839deg);
+  font-family: "Sanomat Sans Trial", sans-serif !important;
+}
+.fixed-Nav-text h1 {
+  font-weight: 300;
+}
+.fixed-Nav-text p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 1.5px !important;
+}
+
 .heros {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/about-page/hero/01.jpg);
   background-position: center center;
@@ -637,9 +669,49 @@ body {
   }
 }
 
+.fixed-Nav {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: oklch(21% 0.034 264.665deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 5rem;
+  border-bottom: 2px solid oklch(98.5% 0.002 247.839deg);
+}
+.fixed-Nav-link img {
+  width: 5rem;
+}
+.fixed-Nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: oklch(98.5% 0.002 247.839deg);
+  font-family: "Sanomat Sans Trial", sans-serif !important;
+}
+.fixed-Nav-text h1 {
+  font-weight: 300;
+}
+.fixed-Nav-text p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 1.5px !important;
+}
+
 .body-1 {
   font-family: "amonosdisplay", sans-serif;
-  background-color: oklch(27.8% 0.033 256.848deg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/home-page/bg-herooo/01.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 37.5rem) {
+  .body-1 {
+    background-position: center;
+  }
 }
 .body-1 p {
   position: relative;
@@ -704,7 +776,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .body-1 section,
 .body-1 footer {
@@ -1289,6 +1361,367 @@ body {
 .loaction nav ul li .disabledd {
   color: oklch(44.6% 0.03 256.802deg);
   cursor: no-drop;
+}
+
+.contact-us {
+  overflow: hidden;
+}
+.contact-us-header {
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-header {
+    margin-bottom: 6rem;
+  }
+}
+.contact-us-header h1 {
+  font-size: 8rem;
+  text-align: center;
+  font-family: "amonosdisplay", sans-serif;
+  text-transform: uppercase;
+  color: oklch(76.9% 0.188 70.08deg);
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-header h1 {
+    font-size: 6rem;
+  }
+}
+.contact-us-data {
+  padding: 2rem 4rem;
+  border-radius: 6rem;
+  border: 2px solid oklch(66.6% 0.179 58.318deg);
+  transition: all 0.4s;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-data {
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+.contact-us-data-loc {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-data-loc {
+    gap: 1rem;
+  }
+}
+.contact-us-data-loc-src {
+  width: 6rem;
+  height: 6rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-data-loc-src {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.contact-us-data-loc h4 {
+  color: oklch(98.5% 0.002 247.839deg);
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-data-loc h4 {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+}
+.contact-us-data-loc h4 a {
+  color: oklch(98.5% 0.002 247.839deg);
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 37.5rem) {
+  .contact-us-data-loc h4 a {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+}
+.contact-us-data:hover {
+  background-color: oklch(66.6% 0.179 58.318deg);
+}
+
+.section-contact-us {
+  background-color: oklch(27.8% 0.033 256.848deg);
+  margin-bottom: -2rem;
+  padding: 15rem 6rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .section-contact-us {
+    padding: 10rem 3rem;
+  }
+}
+
+.section-social-media {
+  padding: 20rem 6rem;
+  background-color: oklch(21% 0.034 264.665deg);
+}
+@media only screen and (max-width: 37.5rem) {
+  .section-social-media {
+    padding: 10rem 3rem;
+  }
+}
+
+.herosss {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../images/contact/hero/01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  font-family: "amonosdisplay", sans-serif;
+  overflow: hidden;
+}
+.herosss-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: oklch(98.5% 0.002 247.839deg);
+  width: 90%;
+}
+.herosss-header-title {
+  font-size: 12rem;
+}
+@media only screen and (max-width: 56.25rem) {
+  .herosss-header-title {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-header-title {
+    font-size: 6rem;
+  }
+}
+.herosss-header-text {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+@media only screen and (max-width: 56.25rem) {
+  .herosss-header-text {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-header-text {
+    font-size: 1.5rem;
+  }
+}
+.herosss-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 6rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-logo {
+    display: none;
+  }
+}
+.herosss-footer-logo-text a {
+  color: oklch(98.5% 0.002 247.839deg);
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.herosss-footer-logo-text a:hover {
+  letter-spacing: 5px;
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-navigation-big {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-navigation.navbar {
+    display: block;
+  }
+}
+.herosss-footer-navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.herosss-footer-navigation li {
+  list-style: none;
+  z-index: 2;
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-navigation li {
+    width: 100%;
+  }
+}
+.herosss-footer-navigation li a:link,
+.herosss-footer-navigation li a:visited {
+  font-size: 1.8rem;
+  background: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #e2e2e2;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-navigation li a:link,
+  .herosss-footer-navigation li a:visited {
+    font-size: 2.5rem;
+  }
+}
+.herosss-footer-navigation li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #fcb116;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+.herosss-footer-navigation li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fcb116;
+  transition: 0.5s ease;
+}
+.herosss-footer-navigation li a:hover::before {
+  width: 100%;
+}
+.herosss-footer-navigation li a:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  background-color: #fcb116;
+}
+.herosss-footer-navigation li a:hover,
+.herosss-footer-navigation li a:active {
+  color: #222;
+  transition-delay: 0.5s;
+}
+@media only screen and (max-width: 37.5rem) {
+  .herosss-footer-navigation li a:hover,
+  .herosss-footer-navigation li a:active {
+    color: #222 !important;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 5rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media {
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.social-media-header h3 {
+  font-family: "amonosdisplay", sans-serif;
+  font-size: 8rem;
+  color: oklch(76.9% 0.188 70.08deg);
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media-header h3 {
+    font-size: 4.5rem;
+  }
+}
+.social-media-header .floating-text {
+  animation: floatUpDown 2s ease-in-out infinite;
+  display: inline-block;
+  position: relative;
+}
+@keyframes floatUpDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.social-media .all-soial-media {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+@media only screen and (min-width: 112.5rem) {
+  .social-media .all-soial-media {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 75rem) {
+  .social-media .all-soial-media {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media .all-soial-media {
+    gap: 2rem;
+    align-items: center;
+    justify-content: start;
+  }
+}
+.social-media .all-soial-media .all-social-media-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media .all-soial-media .all-social-media-data {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.social-media .all-soial-media .all-social-media-data .all-social-media-data-src {
+  width: 6rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media .all-soial-media .all-social-media-data .all-social-media-data-src {
+    width: 4rem;
+  }
+}
+.social-media .all-soial-media .all-social-media-data h5 a {
+  color: oklch(98.5% 0.002 247.839deg);
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 37.5rem) {
+  .social-media .all-soial-media .all-social-media-data h5 a {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
 }
 
 .section-all-Logos {
